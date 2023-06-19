@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Mobile Number Validation</h1>
+    </center>
+    <hr>
+    <form autocomplete="off">
+        <label for="mobile">mobile</label>
+        <input type="number" name="mobile" id="mobile" maxlength="10" onkeyup="validate()">;
+        <strong id="status"></strong>
+    </form>
+    <script>
+             function validate()
+        {
+           let mobile = document.getElementById("mobile").value;
+           let status = document.getElementById("status");
+            
+           let regax = /^[6-9]\d{9}$/;
+
+            if(mobile === "")
+        {
+            status.innerText = " number field must be filled";
+            status.style.color = "orange";
+        }
+           else {if(regax.test(mobile) === false)
+        {
+            status.innerText = `Invalid indian phoneNumber`;
+            status.style.color = "blue";
+        }
+            else
+            {
+            status.innerText= `Valid indian phoneNumber`;
+            status.style.color = "green";
+           }
+                }
+        }
+    </script>
+</body>
+</html>

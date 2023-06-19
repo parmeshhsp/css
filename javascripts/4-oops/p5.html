@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>By using string object constructor using new keyword</h1>
+
+    <script>
+        let str1 = new String("ABCD");
+        document.write(str1 +"<br>");
+        for(let i=0; i<=str1.length;i++){
+            document.write(str1[i]+"<br>");
+        }
+        document.write(typeof(str1));
+    </script>
+    <script>
+        document.write("<hr>");
+        document.write("<h1> String methods...!</h1>");
+        document.write("<hr>");
+
+        document.write("<h3>String charAt() Method...!</h3>");
+        var s1 ="Javascript";
+        document.write(s1.charAt(6));
+
+        document.write("<hr>");
+        document.write("<h3> String concat() Method...!</h3>");
+        var s2="Example";
+        var s3=s1.concat(s2)
+        document.write(s3+"<br>");
+
+        var s4 = s1+s2;
+        document.write(s4+"<br>");
+
+        document.write("<h3>String indexOf() Method...!</h3>");
+        var s1 ="Javascript";
+        document.write(s1.indexOf("i"));
+        document.write(s1)
+
+        document.write("<hr>");
+        document.write("<h3> String lastIndexOf() Method...!</h3>");
+        var ss="Example";
+        var s3=ss.lastIndexOf("p");
+        document.write(s3+"<br>");
+
+        document.write("<hr>");
+        document.write("<h3> String LowerCase() Method...!</h3>");
+        var ss="EXAMPLE";
+        var s3=ss.toLowerCase();
+        document.write(s3+"<br>");
+
+        document.write("<hr>");
+        document.write("<h3> String UpperCase() Method...!</h3>");
+        var ss="paramesh";
+        var s3=ss.toUpperCase();
+        document.write(s3+"<br>");
+
+        document.write("<hr>");
+        document.write("<h3> String trim() Method...!</h3>");
+        var ss="             EXAMPLE        Trim";
+        var s3=ss.trim();
+        document.write(s3+"<br>");
+    </script>
+</body>
+</html>

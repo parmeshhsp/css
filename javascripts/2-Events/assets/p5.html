@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Event</title>
+    <style>
+        div{
+            background-color: teal;
+            color: #fff;
+            padding: 20px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4{
+            padding: 10px;
+            background-color: crimson;
+            color: #161414;
+        }
+    </style>
+</head>
+<body>
+    <h3>On mousewheel</h3>
+    <h4 id="output"></h4>
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler()">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nemo totam excepturi provident deserunt id iusto eligendi, atque necessitatibus sint quod nisi pariatur, accusantium ab hic. Similique fugiat modi nostrum.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, nisi fugit a, ipsam illum debitis velit asperiores sint nihil, fugiat cumque dolores? Nam fuga quisquam debitis veritatis maiores ex quis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero tempora velit repellendus alias. Ex, unde, officia, explicabo sequi facere sapiente eos exercitationem ipsa excepturi maiores quis possimus velit deserunt corrupti.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus delectus voluptates modi fuga officiis? Dolor tempora dignissimos, sunt ipsa qui atque aspernatur ullam sapiente accusantium nihil, neque delectus omnis beatae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae similique vel nulla sequi excepturi, eum, laboriosam inventore voluptatum mollitia, explicabo ab magnam animi. Iusto eos necessitatibus ipsum cupiditate voluptate iure.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ut nobis, commodi recusandae assumenda error impedit aperiam, doloribus vero ratione iusto nesciunt hic explicabo eveniet reiciendis dignissimos iste amet incidunt.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa reprehenderit tenetur quasi itaque facilis, inventore quam dolor quaerat expedita necessitatibus aperiam quisquam harum sit odio quo soluta quod saepe tempora.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium consectetur, inventore blanditiis accusantium qui voluptates iusto eum accusamus? Corporis temporibus eligendi fugiat maxime laudantium sed vero repellat voluptatum nemo nesciunt.</p>
+    </div>
+    <script>
+        function wheelHandler(){
+            document.getElementById("output").innerHTML = document.getElementById("txt").scrollTop + "px"
+        }
+    </script>
+</body>
+</html>

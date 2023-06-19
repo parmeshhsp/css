@@ -1,0 +1,118 @@
+.list-marker-position>ol>li{
+    background-color: brown;
+    padding: 20px;
+    margin-bottom: 20px;
+    list-style-position: inside;
+}
+.list-marker-position>ol>li{
+    color: beige;
+    text-decoration: none;
+}
+.list-marker-position>ol>li>::marker{
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.list-icon>ul>li{
+    list-style-image: url(../images/img.5.png);
+}
+.list-shorthand>ul>li>{
+    background-color: aqua;
+    padding: 20px;
+    margin-bottom: 20px;
+    list-style: decimal inside url(../images/img\ \(2\).png);
+}
+.empty-cell-table{
+    empty-cells: hide;
+}
+/*.odd-even-table,.odd-even-table th, .odd-even-table td{
+    border: px ;
+}
+.odd-even-table tr:nth-child(odd){
+    background-color: azure;
+}
+.odd-even-table tr:nth-child(even){
+    background-color: blueviolet;
+}
+.odd-even-table tr:hover{
+    background-color: violet;
+}
+.odd-even-table th{
+    background-color: chocolate;
+}
+.odd-even-table>caption{
+    color: bisque;
+    font-weight: bold;
+    caption-side: bottom;
+}
+.odd-even-table td{
+    height: px;
+    vertical-align: center;
+}
+.layout-table,.layout-table th, .layout-tabletd{
+    border: 2px salmon;
+    border-collapse: collapse;
+    padding: 20px;
+}
+.layout-table{
+    width:10%;
+    table-layout: fixed;
+}
+.layout-table td,.layout-table th{
+    overflow: scroll;
+}*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+    header>nav>ul{
+        list-style-type: none;
+        float: right;
+    }
+    header>nav>ul>li{
+        display:inline-block;
+        padding: 25px;
+    }
+    header>nav>ul>li:hover a{
+        color: darkolivegreen;
+    }
+    header>nav>ul>li>a{
+        color: indianred;
+        text-decoration: none;
+    }
+    .bannerCommonClass{
+        color: darkorange;
+    }
+    .bannerCommonClass{
+        background-color: violet;
+        color: aquamarine;
+        padding:30px;
+        height: 300px;
+        text-align: center;
+    }
+    .bannerCommonClass>h3{
+        font-size: 50px;
+    }
+    .bannerCommonClass>h3:hover{
+        color: deeppink;
+    }
+    .bannerCommonClass>h2{
+        font-size: 50px;
+    }
+    .header>img{
+        height: 24px;
+    }
+    .bannerCommonClass>h1:hover{
+        color: brown;
+    }
+
+    .banner2{
+        background-image: url(../images/img3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+

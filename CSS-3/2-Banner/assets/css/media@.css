@@ -1,0 +1,50 @@
+/*Mobile Version*/
+@media (max-width:768px) {
+.page{
+    background-color: skyblue;
+    padding: 20px;
+    }
+.page>ul>li{
+    display: block;
+}
+.page>ul{
+    float: none;
+}
+.page{
+    text-align: center;
+}
+}
+/*TAB Version*/
+@media (min-width:769px) and (max-width:1024px){
+.page{
+    background-color: red;
+    padding: 20px;
+    }
+
+.page>ul>li{
+    display: block;
+}
+.page>ul{
+    float: none;
+}
+.page{
+    text-align: center;
+}
+}
+/*p3.html*/
+/*Mobile Version*/
+@media (max-width:768px) {
+    page{
+        background-color: skyblue;
+        padding: 20px;
+    }
+    page>ul>li{
+        display: block;
+    }
+    page>ul{
+        text-align: center;
+    }
+    .banner2{
+        background-color: bisque;
+    }
+}

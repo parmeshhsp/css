@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+</head>
+<body>
+    <center>
+        <h1>CALL BACK FUNCTION...!1</h1>
+    </center>
+    <script>
+        function HowAreYou(question, yes, no){
+            if(confirm(question)){
+                yes();
+            }
+            else{
+                no();
+            }
+        }
+        HowAreYou("How is your Health..?" , function(){document.write("This is yes Function...!")}, function(){document.write("This is No Function...!")});
+    </script>
+</body>
+</html>

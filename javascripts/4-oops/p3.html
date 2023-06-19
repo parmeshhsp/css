@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+</head>
+<body>
+    <h1>JavaScript Table </h1>
+    <script>
+        let empDetails = {
+            "emp":[ {
+            "id": 1,
+            "firstName":"Paramesh",
+            "lastName":"HS",
+            "fullName": function(){
+                return this.firstName + " " +this.lastName;
+            },
+            "mobile":[9741852220,8618661977],
+            "pincode":560079,
+            "adress":{"local":"bengaluru","permanent":"Hosur"},
+            "photo":""
+        },
+        {
+            "id" : 2,
+            "firstName":"Venkat",
+            "lastName":"H",
+            "fullName": function(){
+                return this.firstName + " " +this.lastName;
+            },
+            "mobile":[9871852220,8618419707],
+            "pincode":560089,
+            "adress":{"local":"bengaluru","permanent":"AndraPradesh"},
+            "photo":""
+        },
+        {
+            "id" : 3,
+            "firstName":"Harish",
+            "lastName":"KS",
+            "fullName": function(){
+                return this.firstName + " " +this.lastName;
+            },
+            "mobile":[9871854400,8212419707],
+            "pincode":560050,
+            "adress":{"local":"bengaluru","permanent":"Tumkur"},
+            "photo":""
+        },
+       ] 
+   
+};
+    
+    </script>
+
+    <script>
+        document.write("<table border='1' cellpadding='10'> ");
+            document.write("</tr>");
+            document.write("<th> Emp Id </th>");
+            document.write("<th> FirstName </th>");
+            document.write("<th> LastName </th>");
+            document.write("<th> fullName </th>")
+            document.write("<th> Mobile Number </th>");
+            document.write("<th> Alt PhoneNumber </th>");
+            document.write("<th> Local Address</th>");
+            document.write("<th> Per Address</th>");
+            document.write("<th> Emp Photo</th>")
+            document.write("<th> Pin Code</th>");
+            document.write("<th> Options</th>");
+        document.write("</tr>");
+
+        document.write("<tr>");
+            document.write("<td>" + empDetails.id +"</td>");
+            document.write("<td>" + empDetails.firstName +"</td>");
+            document.write("<td>" + empDetails.lastName +"</td>");
+            document.write("<td>" + empDetails.fullName() +"</td>");
+            document.write("<td>" + empDetails.mobile[0]+"</td>");
+            document.write("<td>" + empDetails.mobile[1]+"</td>");
+            document.write("<td>" + empDetails.adress.local+"</td>");
+            document.write("<td>" + empDetails.adress.permanent+"</td>");
+            document.write("<td>" + empDetails.photo+"</td>");
+            document.write("<td>" +empDetails.pincode+"</td>");
+            document.write("<td><button type='button'>Edit</button> | <button type ='button'>Delete</td>");
+            document.write("</tr>"); 
+            document.write("</table>");
+
+            document.write("<tr>");
+            document.write("<td>" + empDetails.id +"</td>");
+            document.write("<td>" + empDetails.firstName +"</td>");
+            document.write("<td>" + empDetails.lastName +"</td>");
+            document.write("<td>" + empDetails.fullName() +"</td>");
+            document.write("<td>" + empDetails.mobile[0]+"</td>");
+            document.write("<td>" + empDetails.mobile[1]+"</td>");
+            document.write("<td>" + empDetails.adress.local+"</td>");
+            document.write("<td>" + empDetails.adress.permanent+"</td>");
+            document.write("<td>" + empDetails.photo+"</td>");
+            document.write("<td>" +empDetails.pincode+"</td>");
+            document.write("<td><button type='button'>Edit</button> | <button type ='button'>Delete</td>");
+            document.write("</tr>"); 
+            document.write("</table>");
+    </script>
+</body>
+</html>

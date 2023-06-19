@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS</title>
+</head>
+<body>
+    <center>
+        <h1>ProtoType</h1>
+    </center>
+    <hr>
+
+    <script>
+        function Student(){
+           // local Property
+        let name , gender;
+
+           //constructor Property
+        this.name ="Harish";
+        this.gender="Male";
+
+        document.write(name,"<br>");
+        document.write(gender,"<br>");
+        }
+        let stud = new Student ();
+        document.write("<br>Stud.name:</br>" + stud.name +"<br><br>");
+        document.write("<br>Stud.gender:</br>" + stud.gender +"<br><br>");
+
+       let  stud1 = new Student ();
+        document.write("<br>Stud1.name:</br>" + stud1.name +"<br><br>");
+        document.write("<br>Stud1.gender:</br>" + stud1.gender +"<br><br>");
+
+        stud.age = 20;
+        document.write("<br>Stud.age:</br>" + stud.age +"<br><br>");
+
+        document.write("<br>Stud1.age:</br>" + stud1.age +"<br><br>");
+
+        Student.prototype.age1=30;
+
+        let student1 = new Student();
+        document.write("<br>student1.name:</br>" + student1.name +"<br><br>");
+        document.write("<br>student1.gender:</br>" + student1.gender +"<br><br>");
+        document.write("<br>student1.age1:</br>" + student1.age1 +"<br><br>");
+
+        let student2 = new Student();
+        document.write("<br>student2.name:</br>" + student2.name +"<br><br>");
+        document.write("<br>student2.gender:</br>" +student2.gender +"<br><br>");
+        document.write("<br>student2.age1:</br>" + student2.age1 +"<br><br>");
+
+    </script>
+</body>
+</html>

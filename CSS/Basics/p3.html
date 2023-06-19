@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-BASICS</title>
+    <style>
+        .combination{
+            background-color: bisque;
+            color: yellow;
+            padding: 20px;
+        }
+        .combination > h3{
+            color: white;
+        }
+        .combination >div{
+            color:purple;
+        }
+        .combination > p{
+            color: black;
+        }
+        .combination >div >h3>{
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>There are 4 different combinations in CSS</h2>
+    </center>
+    <hr>
+    <ol>
+        <li>Descendent Selector(Using SPACE)</li>
+        <li>child Selector (Using > Symbol)</li>
+        <li>Adjacent Sibling selector (Using + symbol)</li>
+        <li>General Sibling selector (Using ~ Symbol)</li>
+    </ol>
+    <hr>
+    <h1>child Selector (Using > Symbol) Ex:..</h1>
+    <hr>
+    <section class="combination">
+        <h2>First H2 Tag...!(child Element)</h2>
+        <p>First Paragraph...!(child Element)</p>
+
+        <h3>second H2 Tag...!(child Element)</h3>
+        <p>Second Paragraph...!(child Element)</p>
+
+        <h2>Third H2 Tag...!(child Element)</h2>
+        <p>Third Paragraph...!(child Element)</p>
+
+        <div>
+            <h3>Fourth h3 Tag...!(GrandChild Element)</h3>
+            <p>Fourth paragraph(GrandChild Element</p>
+        </div>
+
+            <h2>Fifth H2 Tag...!(child Element)</h2>
+            <p>Fifth Paragraph...!(child Element)</p>
+    </section>
+
+</body>
+</html>

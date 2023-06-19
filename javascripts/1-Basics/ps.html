@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        table,td{
+            border: 1px solid grey;
+        }
+        td{padding: 20px;}
+        table{
+            background-color: rgb(20, 211, 84);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Switch case...!</h1>
+    </center>
+    <hr>
+    <table>
+        <tr>
+            <td> <label for="">Enter Your Marks  :</label></td>
+            <td> <input type="number" id="score" name="" min="0" max="100" placeholder="secured Marks"></td>
+            <td> <button type="button" id="btn">Result</button></td>
+        </tr>
+    </table>
+       
+    <script>
+        function switchCase() {
+            let marks =  parseInt(document.getElementById("score").value);
+            switch (score) {
+                case 1: (score >=70 && score <=100);
+                    alert("Your Grade is A...!");
+                    break;
+                case 2: (score >=50 && score <70);
+                    alert(`Your Grade is B...!`);
+                    break;
+                case 3:  (score >35 && score <50);
+                    alert("Your Grade is C...!");
+                     break;
+                case 4:  (score == 35);
+                    alert("Your Grade is D...!");
+                     break;
+                case 5:  (score < 35);
+                    alert("FAIL...!");
+                     break;
+    
+            default:alert("No information for the marks ...!");
+                
+            }
+        }
+         document.getElementById("btn").onclick = switchCase;
+    </script>
+</body>
+</html>

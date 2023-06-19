@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Meter Tag</h2>
+    </center>
+    <hr>
+    <h2>Default meter Tag</h2>
+    <meter></meter>
+    <hr>
+    <h2>Static meter Tag</h2>
+    <meter min="2" max="100" value="80"> </meter>
+    <hr>
+    <h2>Meter Tag</h2>
+   
+        <meter min="1" max="100" id="progress">Dyanamic Progress Tag</meter>
+
+    <script>
+        let globalMin = 1;
+        function startprogress(){
+            if(globalMin<100){
+                globalMin++;
+                document.getElementById("progress").value = globalMin;
+            }
+        }
+        setInterval("startprogress();",100);
+    </script>
+    <hr>
+</body>
+</html>

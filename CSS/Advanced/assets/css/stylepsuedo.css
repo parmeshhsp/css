@@ -1,0 +1,155 @@
+.title{
+    background-color: darkgrey;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.title>h1{
+    color: black;
+}
+.title{
+    color: beige;
+    font-size: 20px;
+}
+.common{
+    background-color: rgb(169, 112, 21);
+    padding: 20px;
+    margin: 30px;
+    border: 3px rgb(7, 7, 7);
+}
+/*p10.html*/
+.cssPsuedoClassh1{
+    color: dimgray;
+}
+.cssPsuedoClass>h1:hover{
+    color: red;
+}
+.cssPsuedoClass>a:hover{
+    color: green;
+}
+.cssPsuedoClass>a:hover{
+    color: blue;
+}
+.cssPsuedoClass>a:active{
+    color: dimgray;
+}
+.cssPsuedoClass>a:visited{
+    color: dimgray;
+}
+/*p11.html*/
+.cssPseudoElement>section::first-line,.cssPseudoElement>section:nth-child(2)::first-letter{
+    background-color: brown;
+    color: azure;
+}
+.cssPseudoElement>section:nth-child(2)::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+.cssPseudoElement>section:last-child>h1::before{
+    content: "BEFORE H1";
+    background-color: aquamarine;
+    color: tomato;
+}
+.cssPseudoElement>section:last-child>h1::after{
+    content: "AFTER H1";
+    background-color: rgb(25, 203, 114);
+    color: tomato;
+}
+
+.cssPosition>h1:first-child,.cssPosition>div>h1:first-child{
+    background-color: blueviolet;
+}
+.cssPosition>h1:nth-child(2),.cssPosition>div>h1:nth-child(2){
+    background-color: rgb(107, 41, 57);
+}
+.cssPosition>h1:nth-child(3),.cssPosition>div>h1:nth-child(3){
+    background-color: rgb(222, 192, 21);
+}
+.cssPosition h1{
+padding: 20px;
+color: forestgreen;
+}
+.cssPosition>.Second{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.cssPosition>.fifth{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.cssPosition>div{
+    position: relative;
+    border: 2px solid coral;
+    padding: 20px;
+}
+.cssPosition>.seven{
+    background-color: wheat;
+}
+.cssPosition>.eight{
+    background-color: rgb(227, 158, 30);
+    position: sticky;
+    top:0%
+}
+.cssPosition>.nine{
+    background-color: hotpink;
+    position: fixed;
+    top: 45%;
+    right: 0%;
+    border-radius: 5px;
+    transition: 1s;
+}
+.cssPosition>.nine:hover{
+    right:2%
+}
+/*p13.html*/
+.zIndex>section{
+    width:200px;
+    height: 150px;
+    padding: 20px;
+    color: brown;
+    position: absolute;
+}
+.zIndex>{
+    position: relative;
+    height: 200px;
+}
+.zIndex>.first{
+    background-color: rgb(200, 54, 54);
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+.zIndex>.second{
+    background-color: rgb(209, 181, 39);
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+.zIndex>.third{
+    background-color: rgb(20, 223, 47);
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+.zIndex>.four{
+    background-color: rgb(26, 66, 135);
+    top: 150px;
+    left: 150px;
+    z-index: 2;
+}
+.zIndex>.first:hover{
+    z-index: 4;
+}
+.zIndex>.second:hover{
+    z-index: 4;
+}
+.zIndex>.third:hover{
+    z-index: 4;
+}
+.zIndex>.four:hover{
+    z-index: 5;
+}

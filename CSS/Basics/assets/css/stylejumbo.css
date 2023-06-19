@@ -1,0 +1,48 @@
+.jumbotron{
+    background-color: #73ca4b;
+    border-radius: 30px;
+}
+.cssFont{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+.cssText{
+    text-align: justify;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-decoration:underline;
+    text-transform: uppercase;
+}
+.cssText >p{
+    text-indent: 100%;
+}
+.navBar{
+    background-color: gray;
+}
+.navBar>ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    float: right;
+}
+.navBar>ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+.navBar>ul>li:hover{
+    background-color: azure;
+}
+.navBar>ul>li>a{
+    color: bisque;
+    text-decoration: none;
+}
+.navBar>ul>li:hover a{
+    color: aquamarine;
+}
+.navBar>img{
+    height: 24px;
+}

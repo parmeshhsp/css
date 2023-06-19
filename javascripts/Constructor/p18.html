@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Window Objects</h3>
+    <button onclick="alertHandler()">alert</button>
+    <button onclick="promptHandler()">prompt</button>
+    <button onclick="confirmHandler()">confirm</button>
+
+    <script>
+        function alertHandler() {
+                window.alert('alert message');
+        }
+        
+        function promptHandler(){
+        var a =  window.prompt("Enter your Name");
+        alert(`My Name is ${a}`);
+        }
+        
+        function confirmHandler(){
+        var x =  window.confirm("Are your sure to delete a file?");
+            /* ok ->true, cancel ->false*/
+    if(x){
+        alert("file deleted successfully...!");
+    } else{
+        alert("oops sorry file terminated !");
+    }
+    }
+    </script>
+</body>
+</html>

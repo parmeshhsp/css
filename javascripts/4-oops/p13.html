@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>Inheritance chain using __proto__Keyword</h1>
+ 
+    <hr>
+
+    <script>
+        let c1 = {
+            c1Title:"HTML",
+            c1Fee:8000
+        }
+
+        let c2 ={
+            c2title:"Angular",
+            c2Fee: 15000,
+            __proto__:c1
+        }
+
+        let c3 ={
+            c3title:"NodeJS",
+            c3Fee: 10000,
+            __proto__:c2
+        }
+
+        let beP ={
+            name : "be-practical",
+            __proto__:c3
+        };
+
+        document.write(`<h3> ${beP}</h3>`);
+        console.log('beP = ',beP);
+        document.write(`<h3> ${beP.c1Title}</h3>`);
+        document.write(`<h3> ${beP.c1Fee}</h3>`);
+        document.write(`<h3> ${beP.c2title}</h3>`);
+        document.write(`<h3> ${beP.c2Fee}</h3>`);
+        document.write(`<h3> ${beP.c3title}</h3>`);
+        document.write(`<h3> ${beP.c3Fee}</h3>`);
+        document.write(`<h3> ${beP.name}</h3>`);
+    </script>
+</body>
+</html>
+        

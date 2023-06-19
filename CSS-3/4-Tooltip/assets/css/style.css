@@ -1,0 +1,31 @@
+.tooltip{
+    background-color: aquamarine;
+    padding: 0px;
+    margin: 0px;
+}
+.fa-youtube:hover{
+    color: grey;
+}
+.tooltip>span{
+   background: gray;
+   color: aliceblue;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0px 6px 8px #fff;
+   position: absolute;
+   top: 50px;
+   left: 160px;
+   display: none;
+}
+.tooltip:hover span{
+    display: block;
+}
+.tooltip>span::before{
+    content: "";
+    border: 10px;
+    border: 10px;
+    border-style: solid;
+    border-color: transparent dimgray transparent transparent;
+    position: absolute;
+    left: -10px;
+}

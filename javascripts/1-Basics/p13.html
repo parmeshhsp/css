@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+</head>
+<body>
+        <center>
+            <h2>function</h2>
+            <pre>
+                1.Default Function (No Parameter,No Return)
+                2.Without Parameter ,with Return Value
+                3.With Parameter , without return
+                4.With Parameter,with Return Value
+            </pre>
+            <hr>
+        </center>
+            <h1 onclick=" defaultFunction()" >1.Default Function (No parameter , No return)</h1>
+            <script>
+                function defaultFunction () //function declarataion
+                {
+                    document.write("This is defult function")
+                }
+                defaultFunction(); // function calling
+            </script>
+            <hr>
+
+             <h2 onclick="addfunction()" >2.Without Parameter ,with Return Value</h2>
+            <script>
+                function addfunction(){
+                    let fnumber = 10 , Snumber = 20, sum;
+
+                    sum = fnumber + Snumber;
+
+                   // return sum;
+                    //return fnumber;
+
+                    document.write(sum);
+                }
+                document.write(`<strong> without parameter ,with Return value :${addfunction()} </strong>`);
+            </script>
+            <hr>
+            <h2> 3.With Parameter , without return Value</h2>
+            <script>
+                function studDetails(fName,SName){
+                    document.write(`<p> First parameter ,with  value :${fName} </p>`);
+                    document.write(`<p> Last parameter ,with  value :${SName} </p>`);
+
+                    let fn = fName;
+                    let ln = lastName;
+
+                    document.write(`<p> First Variable , value is :${fn} </p>`);
+                    document.write(`<p> Second Variable , value is :${ln} </p>`);
+
+                    //let fullname = fName + lastName;
+                    let fullname = fn +  " " + ln;
+
+                    document.write (`<p> Full Name Variable , value is :${fullname} </p>`);
+                }
+                studDetails("HTML","CSS")
+            </script>
+            <hr>
+
+            <h1> 4.With Parameter,with Return Value</h1>
+             <script>
+                function studDetails(fName,SName){
+                    document.write(`<p> First parameter ,with  value :${fName} </p>`);
+                    document.write(`<p> Last parameter ,with  value :${SName} </p>`);
+
+                    let fn = fName;
+                    let ln = lastName;
+
+                    document.write(`<p> First Variable , value is :${fn} </p>`);
+                    document.write(`<p> Second Variable , value is :${ln} </p>`);
+
+                    //let fullname = fName + lastName;
+                    let fullname = fn +  " " + ln;
+
+                    return fullname;
+
+                    document.write (`<p> Full Name Variable , value is :${fullname} </p>`);
+                }
+                document.write(studDetails("HTML", "css"));
+            </script>
+
+            <hr>
+
+            <!-- ECMA SCRIPT CODE -->
+            <h2>ECMA SCRIPT CODE</h2>
+            <script>
+                document.write("<h2> Function Defining</h2>");
+                function sum(a,b){
+                    //return a + b;
+                }
+                document.write(`<h1>fullName = ${fullName("HTML", "CSS")}</h1>`);
+
+                document.write(`<h3> Function Expression...!</h3>`);
+                let fullName = function(fname, lname){
+                    return fName + " " + lname;
+                }
+
+                document.write(`<h3> Arrow Expression...!</h3>`);
+
+                let JS = () => {
+                    let rem = (a,b) => {
+                        //return a%b;
+                    }
+                }
+                document.write(`<h2> rem = ${rem(33,4)} </h2>`);
+            </script>
+
+            <hr>
+
+        
+
+</body>
+</html>

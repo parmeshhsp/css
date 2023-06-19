@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>ES-6</h3>
+    <script>
+        // ECMA Script 6 class -> group of objects (State [var] & behaviours [methods / function])
+        class user {
+            constructor(){
+                this.name = 'Raju'; // state
+            }
+            //methods
+            print(){
+                document.write(`<h1>Hi ${this.name}, Welcome to JavaScript </h1>`)
+            }
+
+            sayhi(){
+                document.write(`<h1>say hi ${this.name} </h1>`);
+            }
+        }
+
+        // print(); // direct call not possible
+
+        let x = new User();
+        x.print();
+        x.sayhi();
+        document.write(`<h1>name is  ${x.name} </h1>`);
+    </script>
+</body>
+</html>

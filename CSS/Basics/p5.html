@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-BASICS</title>
+    <style>
+        .combination{
+            background-color: bisque;
+            color: grey;
+            padding: 20px;
+        }
+        .combination > h1{
+            color: orange;
+        }
+        .combination+h5{
+            color:violet
+        }
+        .combination+h5+h5{
+            color: brown;
+        }
+        .combination+h5+h5+h5{
+            color: chartreuse;
+        }
+        .combination+h5+h5+h5+h5{
+            color: lightgrey;
+        }
+        .combination~h5{
+            color: bisque;
+        }
+        .combination~div{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>There are 4 different combinations in CSS</h2>
+    </center>
+    <hr>
+    <ol>
+        <li>Descendent Selector(Using SPACE)</li>
+        <li>child Selector (Using > Symbol)</li>
+        <li>Adjacent Sibling selector (Using + symbol)</li>
+        <li>General Sibling selector (Using ~ Symbol)</li>
+    </ol>
+    <hr>
+    <h1>General Sibling selector (Using ~ Symbol) Example.</h1>
+    <hr>
+    <section class="combination">
+        <h2>First H2 Tag...!(child Element)</h2>
+        <p>First Paragraph...!(child Element)</p>
+
+        <h2>second H2 Tag...!(child Element)</h2>
+        <p>Second Paragraph...!(child Element)</p>
+
+        <h2>Third H2 Tag...!(child Element)</h2>
+        <p>Third Paragraph...!(child Element)</p>
+
+        <div>
+            <h3>Fourth h3 Tag...!(GrandChild Element)</h3>
+            <p>Fourth paragraph(GrandChild Element</p>
+        </div>
+
+            <h2>Fifth H2 Tag...!(child Element)</h2>
+            <p>Fifth Paragraph...!(child Element)</p>
+    </section>
+    <hr>
+    <section class="combination">
+    </section>
+
+    <h5>This is First H5</h5>
+    <h5>This is Second H5</h5>
+    <h5>This is Third H5</h5>
+    <h5>This is fourth H5</h5>
+    <hr>
+    <h2>General Sibling selector (Using ~ Symbol) ex</h2>
+    <hr>
+    <h5>This is 1st H5</h5>
+    <p>This is first Paragraph</p>
+
+    <h5>This is 2nd H5</h5>
+    <p>This is Second Paragraph</p>
+
+    <div>
+        <h5>This is 3rd h5</h5>
+        <p>This is third paragraph</p>
+    </div>
+
+    <h5>This is 4th h5</h5>
+    <p>This is fourth paragraph</p>
+</body>
+</html>

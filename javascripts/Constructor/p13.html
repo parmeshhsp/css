@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Constructor </h2>
+    <script>
+        function Employee(){
+        this.id = 12 
+        this.name = 'Parmesh';
+        this.mail = "parmeshhsp@gmail.com";
+        this.ph_no = 9741852220;
+        this.display = function(){
+        document.write(`<h3>display function</h3>`);
+            }
+        }
+        var a = new Employee();
+        /* ref/ instance of an constructor */
+        console.log(a);
+        document.write(`<h3>${a.name}</h3>`);//instance key 
+        a.display();
+    </script>
+</body>
+</html>

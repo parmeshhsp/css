@@ -1,0 +1,74 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/*p1.html*/
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 500px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    /* color:#fff;*/
+    font-size: 40px;
+    text-shadow: 3px 3px 3px red;
+}
+.animation1{
+    background-color: blueviolet;
+    /* animation:bepractical;
+    animation-duration:10s;
+    animation-iteration count:infinite;*/
+    animation: beparctical 10s infinite;
+    }
+    @keyframes beparctical {
+        from{background: red;}
+        to{background: blue;}
+    }
+/*p2.html*/
+.animation2{
+        background: url(../Images/Background-size-2.jpg) no-repeat center;
+        background-size: 100%;
+        animation: animation_image 10s infinite;
+}
+ @keyframes animation_image {
+        from{background: url(../Images/Background-size-2.jpg) no-repeat top; color: aquamarine}
+        to{background: url(../Images/Background-size-2.jpg) no-repeat top;}
+}
+/*p3.html*/
+.animation3{
+    background: #fff;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    position: absolute;
+    animation: cssAnimation3 10s infinite;
+}
+@keyframes cssAnimation3{
+        0%{
+            top: 0px;
+            left:0px;
+            background: brown;
+        }
+        25%{
+            top: 0px;
+            left: 0px;
+            background: mediumaquamarine;
+        }
+        50%{
+            top: 0%;
+            left: 0%;
+            background-color: coral;
+        }
+        75%{
+            top: 0%;
+            left: 0%;
+            background-color: rgb(72, 26, 177);
+        }
+        100%{
+            top: 0%;
+            left: 0%;
+            background-color: rgb(232, 17, 63);
+        }
+}

@@ -1,0 +1,64 @@
+/**{
+    padding: 0%;
+    margin: 0%;
+}
+*/
+.jumbotron{
+    background-color: rgb(27, 27, 25);
+    padding: 20px;
+    margin: 20px;
+    color: yellow;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.CssPadding>h1,.CssBorder>h1,.CssMargin>h1{
+    background-color: coral;
+    color:darkslategray;
+    border-radius: 5px;
+}
+.CssPadding>h1, .CssBorder>h1,.CssMargin{
+    margin: 20px;
+}
+.CssPadding>h1:nth-child(1){
+    padding: 50px red;
+}
+.CssPadding>h1:nth-child(2){
+    padding: 50px red brown ;
+}
+.cssPadding>h1:nth-child(3){
+    padding: 20px 70px red brown pink ;
+}
+.CssPadding>h1:nth-child(4){
+    padding: 20px 80px 60px
+}
+.CssPadding>h1:nth-child(4){
+    padding: 25px 60px 90px 50px red brown  yellow pink;
+}
+/*p3.html CSS Margin*/
+.CssMargin>h1:nth-child(1){
+    background-color: antiquewhite;
+   margin: 10px; 
+}
+.CssMargin>h1:nth-child(2){
+    margin: 20px 30px; 
+    background-color: blueviolet;
+}
+
+.CssMargin>h1:nth-child(3){
+    margin: 20px 30px 75px; 
+}
+
+.CssMargin>h1:nth-child(4){
+    margin: 20px 30px 75px 100px; 
+}
+/* p4.html*/
+.CssBoxModel{
+    background-color: brown;
+    padding: 20px;
+    border: 5px orange;
+    margin: 30px;
+    color: gainsboro;
+}
+
+

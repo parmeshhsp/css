@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+
+      <style>
+        table,th,td{
+            background-color: lightgray;
+            border: 2px solid grey;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+     <script>
+        function checkCondition(){
+            let firstNumber = parseInt(document.getElementById("firstNumber").value);
+            let secondNumber = +document.getElementById("secondNumber").value;
+            let thirdNumber = document.getElementById("thirdNumber").value;
+            let result = document.getElementById("result");
+            
+            console.log(type of firstNumber)
+            console.log(type of secondNumber)
+            console.log(type of thirdNumber)
+
+            if (firstNumber === secondNumber && thirdNumber === firstNumber){
+                result.innerHTML = "Number are equal";
+            }
+            else if (firstNumber > secondNumber && firstNumber > thirdNumber){
+                result.innerHTML = "First number is Big";
+            }
+             else if (secondNumber  > firstNumber && firstNumber > thirdNumber){
+                result.innerHTML = "second number is Big";
+            }
+            else{
+                result.innerHTML="Enter Valid numbers"
+            }
+            
+        }
+        document.getElementById("btn-cnd").onclick = checkCondition;
+    </script>
+</body>
+</html>

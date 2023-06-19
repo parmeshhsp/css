@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <center>
+        <h1>Number</h1>
+    </center>
+    <script>
+
+        let a =2; //integer Number
+        let b=3.142; //float-point Number
+        let c=0xff; //HexaDecimal Number
+        let d = 1.7e4;//Exponent Number
+
+        let e = new Number();
+        let f = new Number(16);
+
+        let x = 10;
+        let y = 20;
+        let z = "20";
+        console.log(x+y);
+        console.log(z+z);
+        console.log(x+z);
+        console.log(y+z);
+    </script>
+    <pre>
+        1.isFinite(); //return Boolean value
+        2.isInteger(); //check integer or not
+        3.parseInt();
+        4.toExponential();
+        5.parseFloat();
+        6.toFixed();
+    </pre>
+    <script>
+        document.write("Number.isFInite(Infinity)"+Number.isFinite(Infinity)+"<br>");
+        document.write("Number.isFInite(Infinity)"+Number.isFinite(3.142)+"<br>");
+
+        function divide(m,n){;
+        return m/n;
+        }
+        document.write("Number.isFInite(divide(0,10):"+Number.isFinite(Infinity)+"<br>");
+        document.write("Number.isFInite(Infinity)"+Number.isFinite(3.142)+"<br>");
+
+        let s1 ="3.142";
+        console.log(typeof s1);
+        let s1Result = parseFloat(s1);
+        console.log("ParseFloat :" +s1Result);
+        console.log(typeof s1Result);
+    </script>
+</body>
+</html>

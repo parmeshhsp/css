@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+</head>
+<body>
+    <center>
+        <h1>Looping Statements...!</h1>
+    </center>
+    <hr>
+
+    <ol>
+        <li>while Loop</li>
+        <li>Do While Loop</li>
+        <li>For Loop</li>
+    </ol>
+    <hr>
+    <h1>While Loop Example...!</h1>
+    <input type="number" id="firstnumber">
+    <button onclick="whileLoop()">While loop</button>
+
+    <script>
+        function whileLoop(){
+            let fnumber = +document.getElementById("firstnumber").value;
+            while (fnumber < 10) {
+                document.write(fnumber,"<br><hr>");
+                ++fnumber;
+            }
+        }
+    </script>
+</body>
+</html>

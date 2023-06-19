@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+     <form  onsubmit="">
+        <div>
+            <label for="op"> choose An opt</label>
+            <select name="op" id="op">
+            <option value="">Select</option>
+            <option value="add">Addition</option>
+            <option value="sub">Subtraction</option>
+            <option value="mul">Multiplication</option>
+            <option value="div">Mods</option>
+            </select>
+        </div>
+        <div>
+            <label for="input">Enter Input a?</label>
+            <input type="number" name="input" id="input" required>
+        </div>
+     <div>
+        <label for="input">Enter Input b?</label>
+        <input type="number" name="input" id="input" required>
+     </div>
+     <button type="submit">Execute code</button>
+    </form>
+ 
+    <div id="result"></div>
+
+    <script>
+        function handler(operator){
+            operator.preventDefault();
+        var operator = document.getElementById('input').value;
+        var a = parseInt (document.getElementById('input').value);
+        var b = parseInt (document.getElementById('input').value); 
+
+        var x = Number(a);
+        var y = Number(b);
+        var res = 0;
+
+            if(operator === "add" ){
+            res = x + y; // perform addition
+            document.getElementById('result').innerHTML = (`<h1>Addition of 2 numbers =${res}</h1>`);
+            }
+            else if(operator === "sub"){
+            res = x-y;
+            document.getElementById('result').innerHTML = (`<h1>subtraction of 2 numbers =${res}</h1>`);
+            }
+            else if(operator === "mul"){
+             res = x*y;
+             document.getElementById('result').innerHTML = (`<h1>Multiplication of 2 numbers =${res}</h1>`);
+            }
+
+            else if(operator === "div"){
+                if(x > y){
+                    res = x / y;
+                }
+                else {
+                    res = y / x;
+                }
+            document.getElementById('result').innerHTML = (`<h1>div of 2 numbers =${res}</h1>`);
+            }
+            else{
+                return 'not selected any operator'
+            }
+        }  
+    </script>
+</body>
+</html>

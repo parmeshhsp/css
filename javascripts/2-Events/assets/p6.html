@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>ONSELECT ,ONCOPY,ONCUT,ONPASTE</h1>
+    </center>
+
+    <form action="">
+        <label for="">Enter Some Content</label>
+        <input type="text" name="first" onselect="sel" oncopy="cop">
+        <br><br>
+        <textarea name="" id="" cols="30" rows="10" onpaste="pas" oncut="cut"></textarea>
+    </form>
+    <script>
+        function sel(){
+            alert("Condition as selected");
+        }
+        function cop(){
+            alert("Condition as copied");
+        }
+        function pas(){
+            alert("Condition as pasted");
+        }
+        function cut(){
+            alert("Condition as cut the content , ready to paste");
+        }
+    </script>
+</body>
+</html>

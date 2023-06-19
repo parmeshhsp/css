@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <!-- Array => is a group of values of similar type
+    types
+        1.Literal types (single)
+            a.Array literals
+            b.array Using Constructors.
+            c.array as constructor Parameters.
+        2.Object Array
+        3.JSON Array (javascript object Notation)
+    -->
+
+    <script>
+        //array literals
+        var num = [12,2,3,4,45,66]; /*numbers*/
+        var user = ['Rama','sita',];
+        var arr = [true, 124, "parmeshhsp@gmail.com", 123.45];
+
+    document.write(`<h3>  ${arr[0]}</h3>`);
+    document.write(`<h3>  ${arr}</h3>`);
+    document.write(`<h3>  ${user[2]}</h3>`);
+    document.write(`<h3>  ${user}</h3>`);
+
+    document.write(`<h3>  ${num[4]}</h3>`);
+    document.write(`<h3>  ${num}</h3>`);
+
+    for(i=0 ; i<user.length;i++){
+        document.write(`<h3> style='color:yellow;' ${user[i]}</h3>`);
+    }
+    </script>
+</body>
+</html>

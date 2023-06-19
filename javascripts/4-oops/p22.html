@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Get and Set Method</h3>
+    <script>
+        class Car {
+            constructor() {
+                this.title = ''; // will not used to call
+            }
+            // get to return the value
+            get title() {
+                return `My car title is = ${this._name} ;`;//_name => alias property to title
+            }
+            //set to assign the value
+            set title (x){
+                this._name = x ;
+            }
+        }
+        let x = new Car ();
+            console.log('x =',x);
+            x.title = "Mahindra Thar"; // setter method
+            document.write(`<h2> ${x.title}</h2>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.cssColor1{
+    background-color: #00ffff;
+    color: brown;
+    padding: 20px;
+    margin: 20px;
+}
+.cssColor2{
+    background-color: grey;
+    color: brown;
+    padding: 20px;
+    margin: 20px;
+}
+.cssColor3{
+    background-color: rgb(255,215,0);
+    color: black;
+    padding: 20px;
+    margin: 20px;
+}
+.commonCssColors{
+    color:rgb(7,6,6);
+    padding: 20px;
+    margin: 20px;
+}

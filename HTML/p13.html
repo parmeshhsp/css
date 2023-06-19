@@ -1,0 +1,33 @@
+<html>
+    <Head>
+        <title>Marque Tag</title>
+    </Head>
+    <body>
+        <center>
+        <h1>Marque Tag...!</h1>
+
+       <!-- <marquee behavior="alternate" bgcolor="Skyblue">This is important Notices""</marquee> -->
+      <marquee><a> This is a morquee Tag</a></marquee>
+      <marquee> This is a morquee Tag</marquee>
+      <marquee behavior="slide" bgcolor="Red">"This is important Notices" </marquee>
+      <marquee behavior="scroll" bgcolor="purple">"This is important Notices"</marquee>
+      <hr>
+      <marquee direction="up"  bgcolor="purple" height="100"id="">This is up Marquee tag</marquee>
+      <marquee direction="down"bgcolor="orange" height="100">This is Down Marquee tag</marquee>
+      <marquee direction="left"bgcolor="purple" height="100">This is left Marquee tag</marquee>
+      <marquee direction="right"bgcolor="purple" height="50">This is right Marquee tag</marquee>
+  
+      <marquee  bgcolor="yellow" scrollamount="2"id="test">This is A Marquee tag</marquee>
+      <marquee  bgcolor="violet" scrollamount="0.5">This is A Marquee tag</marquee>
+      <!-- <marquee  bgcolor="orange" scrollamount="20">This is A Marquee tag</marquee> -->
+
+     <script>//javascript
+        document.getElementById("test").onmouseover= function(){
+            document.getElementById("test").stop();
+        };
+        document.getElementById("test").onmouseleave=function(){
+            document.getElementById("test").start();
+        };
+    </script>
+    </body>
+</html>

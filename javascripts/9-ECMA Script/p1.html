@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>let and const over var</h3> 
+    <script>
+        // let and const have local scope or block scope 
+        if(10 < 40){
+           const x = 120; // var=> global scope variable , let & Const => local scope / block scope variables
+            document.write(`<h3>Inside the block = ${x} </h3>`);
+        }
+
+        document.write (`<h1> outside the block = ${x}</h1>`); // let or const =>reference error
+    </script>   
+</body>
+</html>

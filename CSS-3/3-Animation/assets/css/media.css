@@ -1,0 +1,19 @@
+@media (max-width:768px) {
+section{
+    background-color: skyblue;
+    padding: 20px;
+    }
+.animation1>h1{
+    display: block;
+}
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+section{
+        background-color: aquamarine;
+        padding: 20px;
+    }
+    .animation1{
+        background-image: url(../Images/Background-size-2.jpg);
+    }
+}

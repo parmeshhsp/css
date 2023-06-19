@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Events</title>
+</head>
+<body>
+    <video src="media/video.mp4" controls height="200" id="videofile"></video>
+    <hr>
+
+    <button onclick="playHandler()"> Play</button>
+    <button onclick="pauseHandler()"> Pause</button>
+    <button onclick="FullScreen()">Fullscreen</button>
+
+    <script>
+        function playHandler(){
+            document.getElementById("videofile").play();
+        }
+        function pauseHandler(){
+            document.getElementById("videofile").pause();
+        }
+        function FullScreen(){
+            document.getElementById("videofile").requestFullscreen();
+        }
+    </script>
+</body>
+</html>

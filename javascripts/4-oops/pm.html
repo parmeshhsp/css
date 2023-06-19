@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Object property destructor using loop</h3>
+    <script> 
+        // in order format
+        const user = {
+            id: 1,
+            name: "John Smith",
+            mail:'johnsmith@gmail.com',
+            age: 30,
+            mail:'johnsmith@gmail.com'
+        };
+
+        // for...in 
+        for(let item in user){
+            document.write(`<h3> ${item} : ${user[item]}</h3>`)
+        };
+    </script>
+</body>
+</html>
